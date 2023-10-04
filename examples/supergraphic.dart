@@ -51,8 +51,8 @@ class SuperGraphic extends StatelessWidget {
 
 class SuperBarPainter extends BarPainter
 {
-  final redGradient = [Color.fromARGB(255, 229, 210, 209), Color.fromARGB(255, 193, 136, 135), Color.fromARGB(255, 66, 28, 28)];
-  final greenGradient = [Color.fromARGB(255, 27, 68, 32), Color.fromARGB(255, 137, 196, 136), Color.fromARGB(255, 211, 232, 210)];
+  final redGradient = const [Color.fromARGB(255, 229, 210, 209), Color.fromARGB(255, 193, 136, 135), Color.fromARGB(255, 66, 28, 28)];
+  final greenGradient = const [Color.fromARGB(255, 27, 68, 32), Color.fromARGB(255, 137, 196, 136), Color.fromARGB(255, 211, 232, 210)];
   final gradientStops = [0.25, 0.5, 1.0];
 
   @override

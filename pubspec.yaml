@@ -4,6 +4,8 @@ author: Nuri Kerem Yilmaz
 version: 0.0.1
 homepage: https://github.com/00Kerem00/customizable_chart
 
+publish_to: 'https://pub.dev'
+
 environment:
   sdk: '>=2.19.6 <3.0.0'
   flutter: ">=1.17.0"
