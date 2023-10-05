@@ -13,24 +13,37 @@ and the Flutter guide for
 
 It's a widget that allows you to design your bars with your own data structures and a lot of details.
 
+![ghi2](https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e)
+![ghi3](https://github.com/00Kerem00/customizable_chart/assets/143900054/ef36b4fb-8175-4476-9eb3-283b7d8c3b48)
 
+It gives you an chart with rects and draws your bar design in those rects.
 
-<div style="display: flex;">
-    <img src="https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e" alt="Description of image 1" style="max-width: 50%; margin-right: 20px;">
-    <img src="https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e" alt="Description of image 2" style="max-width: 50%;">
-</div>
+![ghi0](https://github.com/00Kerem00/customizable_chart/assets/143900054/9337d6de-0cc7-4c41-9553-a7709256fcea)
+![ghi1](https://github.com/00Kerem00/customizable_chart/assets/143900054/76e71ad5-8e66-4c08-be66-f07fcb4e6134)
 
-## Getting started
+## Before started
 
 You need to have knowledge of CustomPaint and ChangeNotifiers for use this.
 
 ## Usage
 
-Let's start with create a dart file has the widget that will return our designed chart named as sample_chart then import 'package:customizable_chart/customizable_chart.dart'.
+Let's start with add dependency to "pubspec.yaml".
+
+```yaml
+dependencies:
+  customizable_chart:
+    git:
+      url: "https://github.com/00Kerem00/customizable_chart.git"
+      ref: master
+```
+
+
+Then create a dart file named as "sample_chart" has the widget that will build our designed chart. And import 'package:customizable_chart/customizable_chart.dart'.
 We have 3 parent classes to design our chart. BarData, BarPainter, BarGroupDrawer.
 
 
-BarData
+### BarData
+In BarData we store height reference values, labels, priority and other values. And add data we want to display in a list of BarData
 
 | Properties | Description        | Type |
 |------------|--------------------|-----|
@@ -40,14 +53,17 @@ BarData
 | `minValue, maxValue` | Min and max values of heightReferenceValues for define indicator state. They determines in constructor. |     |
 
 
-BarPainter
+### BarPainter
+We design our bars in this class with CustomPainter principles.
 
 | Methods    | Description                | Type |
 |------------|-------------------------|------|
 | `paintBar(Canvas canvas, Size size, Offset offset, BarData barData, Map<String, double> heights)`| This is the method you will override and add your own data drawings. Heights are determined by BarGroupDrawer from reference values according to other bars that currently appearing in chart      | void |
 
 
-BarGroupDrawer
+### BarGroupDrawer
+If we want to draw anything without depending on bars, we can add some extras.
+![ghi4](https://github.com/00Kerem00/customizable_chart/assets/143900054/eb8355c8-15fe-4134-bda8-a4a3f7544f65)
 
 | Properties   | Description                                                                  | Type          |
 |--------------|------------------------------------------------------------------------------|---------------|
