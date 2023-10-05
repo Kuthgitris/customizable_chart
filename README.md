@@ -17,7 +17,6 @@ It's a widget that allows you to design your bars with your own data structures 
 
 <div style="display: flex;">
     <img src="![ghi2](https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e)" alt="A sample" style="max-width: 50%; margin-right: 20px;">
-    <img src="![ghi2](https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e)" alt="Another sample" style="max-width: 50%;">
 </div>
 
 ## Getting started
