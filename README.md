@@ -13,6 +13,8 @@ and the Flutter guide for
 
 It's a widget that allows you to design your bars with your own data structures and a lot of details.
 
+![ghi2](https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e)
+
 ## Getting started
 
 You need to have knowledge of CustomPaint and ChangeNotifiers for use this.
