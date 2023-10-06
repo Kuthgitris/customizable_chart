@@ -16,7 +16,7 @@ It's a widget that allows you to design your bars with your own data structures 
 ![ghi2](https://github.com/00Kerem00/customizable_chart/assets/143900054/66fcb698-e104-4179-98d4-ab32c0379b1e)
 ![ghi3](https://github.com/00Kerem00/customizable_chart/assets/143900054/ef36b4fb-8175-4476-9eb3-283b7d8c3b48)
 
-It gives you an chart with rects and draws your bar design in those rects.
+It gives you a chart with rects and draws your bar design in those rects.
 
 ![ghi0](https://github.com/00Kerem00/customizable_chart/assets/143900054/9337d6de-0cc7-4c41-9553-a7709256fcea)
 ![ghi1](https://github.com/00Kerem00/customizable_chart/assets/143900054/76e71ad5-8e66-4c08-be66-f07fcb4e6134)
