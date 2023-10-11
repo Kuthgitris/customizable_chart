@@ -23,11 +23,11 @@ It gives you a chart with rects and draws your bar design in those rects.
 
 ## Before started
 
-You need to have knowledge of CustomPaint and ChangeNotifiers for use this.
+You need to have knowledge of CustomPaint and ChangeNotifiers to use this.
 
 ## Usage
 
-Let's start with add dependency to "pubspec.yaml".
+Let's start with adding dependency to "pubspec.yaml".
 
 ```yaml
 dependencies:
@@ -38,19 +38,20 @@ dependencies:
 ```
 
 
-Then create a dart file named as "sample_chart" has the widget that will build our designed chart. And import 'package:customizable_chart/customizable_chart.dart'.
-We have 3 parent classes to design our chart. BarData, BarPainter, BarGroupDrawer.
+Then create a dart file named as "sample_chart" that has the widget that will build our designed chart and import 'package:customizable_chart/customizable_chart.dart'.
+We have 3 parent classes to design our chart with: BarData, BarPainter, BarGroupDrawer.
 
 
 ### BarData
-In BarData we store height reference values, labels, priority and other values. And add data we want to display in a list of BarData
+In BarData we store height reference values, labels, priority and other values.We then add data we want to display in the list of BarData
 
 | Properties | Description        | Type |
 |------------|--------------------|-----|
 | `heightReferenceValues` | Values that you want to show as heights in this chart. | Map<String, double> |
 | `label` | Name of the value. This will appear bottom of bar. | String |
-| `labelPriority` | When the chart zoom out some of your bar labels are not able to appear. They appear according to a period. If this period doesn't allow any high priority label to write it, writes above next label. | int |
-| `minValue, maxValue` | Min and max values of heightReferenceValues for define indicator state. They determines in constructor. |     |
+| `labelPriority` | When the chart zooms out some of your bar labels will not appear. They appear according to a period. If this period doesn't allow any high priority label to write, It writes above next label. | int |
+| `minValue, maxValue` | Min and max values of heightReferenceValues f
+to define indicator state. They are determined in constructor. |     |
 
 
 ### BarPainter
@@ -58,7 +59,7 @@ We design our bars in this class with CustomPainter principles.
 
 | Methods    | Description                | Type |
 |------------|-------------------------|------|
-| `paintBar(Canvas canvas, Size size, Offset offset, BarData barData, Map<String, double> heights)`| This is the method you will override and add your own data drawings. Heights are determined by BarGroupDrawer from reference values according to other bars that currently appearing in chart      | void |
+| `paintBar(Canvas canvas, Size size, Offset offset, BarData barData, Map<String, double> heights)`| This is the method you will use to override and add your own data drawings. Heights are determined by BarGroupDrawer from reference values according to other bars that are currently appearing in chart      | void |
 
 
 ### BarGroupDrawer
@@ -74,7 +75,7 @@ If we want to draw anything without depending on bars, we can add some extras.
 | `void drawBars(Canvas canvas, List<Rect> rects, List<int> indexesOfDisplayed, double unitScale, double minValue, double maxValue)`  |                                                                              | void          |
 
 
-We need to define 3 classes that extends these classes.
+We need to define 3 classes that we will use to extend the classes above.
 
 ```dart
 class SampleBarData extends BarData
